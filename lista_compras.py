@@ -1,6 +1,10 @@
 import pandas as pd
 
 def carrinho(lista):
+    """Cria a lista de compras
+    while: inicia um loop que permite adicionar produtos e verifica a validade do input
+    returns: retorna todos os dados informados para lista
+    """
     while True:
         try:
             item = input("Digite um novo item ou pressione Enter para sair:\n ")
@@ -14,6 +18,7 @@ def carrinho(lista):
         except ValueError:
             print("Digite um valor válido para o preço.")
     return lista
+
 
 carrinho_compras = []
 carrinho_compras = carrinho(carrinho_compras)
