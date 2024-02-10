@@ -14,10 +14,10 @@ def jogo_adivinha_numero(mensagem):
         try:
             chute = int(input(mensagem))
             if chute > numero_a_adivinhar:
-                t = t - 1
+                t -= 1
                 print(f"o valor {chute} é maior que o numero certo, e restam {t} tentativas")
             elif chute < numero_a_adivinhar:
-                t = t - 1
+                t -= 1
                 print(f"o valor {chute} é menor que o numero certo, e restam {t} tentativas")
             else:
                 print("voce acertou")
